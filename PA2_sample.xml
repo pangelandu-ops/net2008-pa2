@@ -1,0 +1,30 @@
+<inventory site="ott-dc1">
+ <device id="sw-core-01" role="switch" os="15.10">
+ <owner>netops</owner>
+ <interface name="Gi0/1" status="up"/>
+ <interface name="Gi0/2" status="up"/>
+ <interface name="Gi0/3" status="down"/>
+ </device>
+ <device id="sw-edge-02" role="switch" os="15.2">
+ <interface name="Gi0/1" status="up"/>
+ <interface name="Gi0/2" status="down"/>
+ </device>
+ <device id="rt-wan-01" role="router" os="17.3">
+ <owner>netops</owner>
+ <interface name="Te0/0" status="up"/>
+ <interface name="Te0/1" status="down"/>
+ <interface name="Te0/2" status="down"/>
+ <interface name="Te0/3" status="admin-down"/>
+ </device>
+ <device id="fw-dmz-01" role="firewall" os="9.1.0">
+ <owner>secops</owner>
+ <interface name="eth1" status="up"/>
+ </device>
+ <device id="lb-web-01" role="load-balancer" os="4.2">
+ <owner>netops</owner>
+ <interface name="eth0" status="up"/>
+ </device>
+ <device role="switch" os="15.2">
+ <owner>netops</owner>
+ </device>
+</inventory>

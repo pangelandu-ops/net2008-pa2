@@ -1,0 +1,6 @@
+min_os:
+ switch: "15.2"
+ router: "17.3.1"
+ firewall: "9.1"
+require_owner: true
+max_down_interfaces: 1
